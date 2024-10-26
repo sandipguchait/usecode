@@ -8,7 +8,7 @@ const topics = [
   { name: 'DSA', icon: '🧮', description: 'Ace data structures and algorithms', color: 'bg-green-50' },
   { name: 'HTML', icon: '🌐', description: 'Create the structure of web pages', color: 'bg-orange-50' },
   { name: 'CSS', icon: '🎨', description: 'Style and layout web pages', color: 'bg-purple-50' },
-  { name: 'Node.js', icon: '🟢', description: 'Build scalable server-side applications', color: 'bg-green-100' },
+  { name: 'NodeJS', icon: '🟢', description: 'Build scalable server-side applications', color: 'bg-green-100' },
   { name: 'Python', icon: '🐍', description: 'Learn versatile programming for various domains', color: 'bg-blue-100' },
   { name: 'SQL', icon: '📊', description: 'Master database querying and management', color: 'bg-red-50' },
   { name: 'Git', icon: '🔀', description: 'Version control and collaboration', color: 'bg-gray-100' },

@@ -29,9 +29,27 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white py-2">
             <nav className="flex flex-col space-y-2 px-4">
-              <Link href="/" className="text-gray-600 hover:text-gray-900 py-2 text-lg">Home</Link>
-              <Link href="/topics" className="text-gray-600 hover:text-gray-900 py-2 text-lg">Topics</Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900 py-2 text-lg">About</Link>
+              <Link 
+                href="/" 
+                className="text-gray-600 hover:text-gray-900 py-2 text-lg" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                href="/topics" 
+                className="text-gray-600 hover:text-gray-900 py-2 text-lg" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Topics
+              </Link>
+              <Link 
+                href="/about" 
+                className="text-gray-600 hover:text-gray-900 py-2 text-lg" 
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </Link>
             </nav>
           </div>
         )}

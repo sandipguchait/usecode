@@ -12,7 +12,7 @@ const categories = [
 
 const Homepage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 mt-6">
+    <div className="min-h-screen bg-gray-50 pt-6">
       <main className="container mx-auto px-4 py-12">
         <section className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">
