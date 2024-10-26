@@ -42,18 +42,23 @@ const TopicPageComponent = () => {
             Data Structures & Algorithms
         </h1>
 
-        <Tabs defaultValue="All" className="mb-6">
-          <TabsList>
+        <div className="mb-6 overflow-x-auto">
+          <div className="flex space-x-2 pb-2">
             {categories.map(category => (
-              <TabsTrigger
+              <button
                 key={category}
-                value={category}
-                onClick={() => setSelectedCategory(category)}>
+                onClick={() => setSelectedCategory(category)}
+                className={`px-3 py-1 text-sm rounded-full whitespace-nowrap transition-colors ${
+                  selectedCategory === category
+                    ? 'bg-primary text-primary-foreground'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
                 {category}
-              </TabsTrigger>
+              </button>
             ))}
-          </TabsList>
-        </Tabs>
+          </div>
+        </div>
 
         <div className="mb-6 flex items-center space-x-4">
           <Input
@@ -89,7 +94,7 @@ const TopicPageComponent = () => {
                   {question.difficulty}
                 </span>
                 <Button variant="outline" asChild>
-                  <Link href={`/problem/${question.id}`}>Solve Problem</Link>
+                  <Link href={`/topics/dsa/${question.id}`}>Solve Problem</Link>
                 </Button>
               </div>
             </div>
