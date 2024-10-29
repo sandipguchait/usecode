@@ -12,7 +12,7 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Logo />
-            <span className="text-3xl font-bold text-white">useCode</span>
+            <span className="text-3xl font-bold text-white">useFrontend</span>
           </Link>
           <nav className="hidden md:flex space-x-6">
             <Link href="/" className="text-white hover:text-yellow-300 transition duration-300">Home</Link>

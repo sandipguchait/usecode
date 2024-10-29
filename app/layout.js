@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 
 export const metadata = {
-  title: "useCode - Ace your interview",
+  title: "useFrontend - Ace your interview",
   description: "Master your frontend engineer interview",
 };
 

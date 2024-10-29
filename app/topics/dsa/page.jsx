@@ -10,15 +10,15 @@ import { ArrowLeft} from 'lucide-react'
 // Mock data for questions
 const questions = [
   { id: 'q1-find-all-anagrams', title: 'Find All Anagrams in a String', description: 'Given a string s and a non-empty string p, find all the start indices of p\'s anagrams in s.', difficulty: 'Easy', category: 'Strings' },
-  { id: 'q2-longest-palindromic-substring', title: 'Longest Palindromic Substring', description: 'Given a string s, return the longest palindromic substring in s.', difficulty: 'Medium', category: 'Strings' },
-  { id: 'q3-add-two-numbers', title: 'Add Two Numbers', description: 'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.', difficulty: 'Medium', category: 'Linked Lists' },
-  { id: 'q4-two-sum', title: 'Two Sum', description: 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.', difficulty: 'Easy', category: 'Arrays' },
-  { id: 'q5-implement-strstr', title: 'Implement strStr()', description: 'Implement strStr(). Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.', difficulty: 'Easy', category: 'Strings' },
-  { id: 'q6-longest-substring-without-repeating-characters', title: 'Longest Substring Without Repeating Characters', description: 'Given a string s, find the length of the longest substring without repeating characters.', difficulty: 'Medium', category: 'Strings' },
-  { id: 'q7-valid-palindrome', title: 'Valid Palindrome', description: 'Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.', difficulty: 'Easy', category: 'Strings' },
-  { id: 'q8-longest-common-prefix', title: 'Longest Common Prefix', description: 'Write a function to find the longest common prefix string amongst an array of strings.', difficulty: 'Easy', category: 'Strings' },
-  { id: 'q9-single-number', title: 'Single Number', description: 'Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.', difficulty: 'Easy', category: 'Arrays' },
-  { id: 'q10-single-number-ii', title: 'Single Number II', description: 'Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.', difficulty: 'Medium', category: 'Arrays' },
+  // { id: 'q2-longest-palindromic-substring', title: 'Longest Palindromic Substring', description: 'Given a string s, return the longest palindromic substring in s.', difficulty: 'Medium', category: 'Strings' },
+  // { id: 'q3-add-two-numbers', title: 'Add Two Numbers', description: 'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.', difficulty: 'Medium', category: 'Linked Lists' },
+  // { id: 'q4-two-sum', title: 'Two Sum', description: 'Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.', difficulty: 'Easy', category: 'Arrays' },
+  // { id: 'q5-implement-strstr', title: 'Implement strStr()', description: 'Implement strStr(). Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.', difficulty: 'Easy', category: 'Strings' },
+  // { id: 'q6-longest-substring-without-repeating-characters', title: 'Longest Substring Without Repeating Characters', description: 'Given a string s, find the length of the longest substring without repeating characters.', difficulty: 'Medium', category: 'Strings' },
+  // { id: 'q7-valid-palindrome', title: 'Valid Palindrome', description: 'Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.', difficulty: 'Easy', category: 'Strings' },
+  // { id: 'q8-longest-common-prefix', title: 'Longest Common Prefix', description: 'Write a function to find the longest common prefix string amongst an array of strings.', difficulty: 'Easy', category: 'Strings' },
+  // { id: 'q9-single-number', title: 'Single Number', description: 'Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.', difficulty: 'Easy', category: 'Arrays' },
+  // { id: 'q10-single-number-ii', title: 'Single Number II', description: 'Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.', difficulty: 'Medium', category: 'Arrays' },
 ]
 
 const categories = ['All', 'Arrays', 'Strings', 'Linked Lists', 'Trees']

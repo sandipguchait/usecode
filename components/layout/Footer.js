@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0 flex items-center">
               <Logo />
-              <h3 className="text-2xl font-bold ml-2 text-gray-800">useCode</h3>
+              <h3 className="text-2xl font-bold ml-2 text-gray-800">useFrontend</h3>
             </div>
             <nav className="flex flex-wrap justify-center md:justify-end gap-8">
               <Link href="/about" className="text-gray-800 hover:text-gray-600">About</Link>
@@ -19,7 +19,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="mt-10 pt-8 border-t border-gray-300 text-center text-gray-800">
-            <p>&copy; {new Date().getFullYear()} useCode. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} useFrontend. All rights reserved.</p>
           </div>
         </div>
       </footer>
