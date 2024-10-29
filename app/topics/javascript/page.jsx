@@ -5,22 +5,8 @@ import Link from 'next/link'
 import { Input } from '../../../components/ui/input'
 import { Button } from '../../../components/ui/button'
 import { ArrowLeft } from 'lucide-react';
+import { categories, questions} from '../../../lib/constants/javascript.constant';
 
-// Mock data for JavaScript questions
-const questions = [
-  { id: 1, title: 'Implement Promise.all()', description: 'Create a function that mimics the behavior of Promise.all().', difficulty: 'Medium', category: 'Async' },
-  // { id: 2, title: 'Debounce Function', description: 'Implement a debounce function that delays invoking a function until after a certain amount of time has elapsed.', difficulty: 'Medium', category: 'Functions' },
-  // { id: 3, title: 'Flatten Array', description: 'Write a function that flattens a nested array of arbitrary depth.', difficulty: 'Medium', category: 'Arrays' },
-  // { id: 4, title: 'Implement bind()', description: 'Create your own implementation of the Function.prototype.bind() method.', difficulty: 'Hard', category: 'Functions' },
-  // { id: 5, title: 'Event Emitter', description: 'Implement a simple event emitter class with on, emit, and off methods.', difficulty: 'Medium', category: 'Design Patterns' },
-  // { id: 6, title: 'Deep Clone', description: 'Write a function to create a deep clone of an object, handling nested objects and arrays.', difficulty: 'Hard', category: 'Objects' },
-  // { id: 7, title: 'Implement Promise.race()', description: 'Create a function that mimics the behavior of Promise.race().', difficulty: 'Medium', category: 'Async' },
-  // { id: 8, title: 'Throttle Function', description: 'Implement a throttle function that limits the rate at which a function can fire.', difficulty: 'Medium', category: 'Functions' },
-  // { id: 9, title: 'Implement Array.prototype.reduce()', description: 'Create your own implementation of the Array.prototype.reduce() method.', difficulty: 'Medium', category: 'Arrays' },
-  // { id: 10, title: 'Currying', description: 'Implement a curry function that converts a function of N arguments to N functions of 1 argument each.', difficulty: 'Hard', category: 'Functions' },
-]
-
-const categories = ['All', 'Functions', 'Arrays', 'Objects', 'Async', 'Design Patterns']
 
 const JavaScriptPage = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -84,6 +70,7 @@ const JavaScriptPage = () => {
           <h2 className="text-xl font-semibold mb-4">JavaScript Challenges</h2>
           {filteredQuestions.map(question => (
             <div key={question.id} className="mb-4 p-4 border rounded">
+              <Link href={`/topics/javascript/${question.id}`}>
               <h3 className="text-lg font-semibold">{question.title}</h3>
               <p className="text-gray-600 mb-2">{question.description}</p>
               <div className="flex justify-between items-center">
@@ -94,10 +81,11 @@ const JavaScriptPage = () => {
                 }`}>
                   {question.difficulty}
                 </span>
-                <Button variant="outline" asChild>
-                  <Link href={`/javascript/problem/${question.id}`}>Solve Challenge</Link>
-                </Button>
+                {/* <Button variant="outline" asChild>
+                  <Link href={`/topics/javascript/${question.id}`}></Link>
+                </Button> */}
               </div>
+              </Link>
             </div>
           ))}
         </section>

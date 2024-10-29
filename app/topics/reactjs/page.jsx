@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Input } from '../../../components/ui/input'
 import { Button } from '../../../components/ui/button'
+import { ArrowLeft } from 'lucide-react';
 
 const questions = [
   { id: 1, title: 'Implement useDebounce Hook', description: 'Create a custom hook that debounces a value.', difficulty: 'Medium', category: 'Hooks' },
@@ -35,7 +36,10 @@ export default function ReactJSPage() {
   return (
     <div className="min-h-screen bg-white">
       <main className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold mb-6">ReactJS</h1>
+        <h1 className="text-3xl font-bold mb-6 flex items-center">
+        <ArrowLeft className="mr-2 cursor-pointer" onClick={() => window.history.back()} /> 
+          ReactJS
+        </h1>
 
         <div className="mb-6 overflow-x-auto">
           <div className="flex space-x-2 pb-2">
