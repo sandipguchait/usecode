@@ -83,6 +83,7 @@ export default function ReactJSPage() {
           <h2 className="text-xl font-semibold mb-4">ReactJS Challenges</h2>
           {filteredQuestions.map(question => (
             <div key={question.id} className="mb-4 p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <Link href={`/reactjs/problem/${question.id}`}>
               <h3 className="text-lg font-semibold">{question.title}</h3>
               <p className="text-gray-600 mb-2">{question.description}</p>
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
@@ -93,10 +94,8 @@ export default function ReactJSPage() {
                 }`}>
                   {question.difficulty}
                 </span>
-                <Button variant="outline" asChild className="w-full sm:w-auto">
-                  <Link href={`/reactjs/problem/${question.id}`}>Solve Challenge</Link>
-                </Button>
               </div>
+              </Link>
             </div>
           ))}
         </section>
