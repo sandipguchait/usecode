@@ -158,7 +158,7 @@ console.log(bankAccount.getBalance()); // 50`,
   }, [isPlaying, steps])
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 pt-8">
       <h1 className="text-3xl font-bold mb-4 flex items-center">
         <ArrowLeft className="mr-2 cursor-pointer" onClick={() => window.history.back()} /> 
             Understanding Closures in JavaScript
